@@ -5,12 +5,15 @@ Vue.use(Vuex);
 
 export default new Vuex.Store({
   state: {
-
+    people: ['John'],
   },
   mutations: {
-
+    ADD: (state) => {
+      state.people.push('');
+    },
   },
-  actions: {
-
+  actions: {},
+  getters: {
+    people: state => state.people,
   },
 });
